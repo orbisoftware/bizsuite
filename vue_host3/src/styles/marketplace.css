@@ -1,0 +1,132 @@
+/* Add some additional global styles for the marketplace */
+
+.demo-addon {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.demo-addon h2 {
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+.addon-info {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 6px;
+  margin: 20px 0;
+}
+
+.addon-info p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.demo-content {
+  margin-top: 20px;
+}
+
+.demo-features {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.demo-features h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.demo-features ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.demo-features li {
+  padding: 8px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.demo-features li:last-child {
+  border-bottom: none;
+}
+
+.demo-features li:before {
+  content: "✓";
+  color: #28a745;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Custom Addon Styles */
+.custom-addon {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-left: 4px solid #17a2b8;
+}
+
+.custom-addon .addon-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.custom-addon .addon-header h2 {
+  margin: 0;
+  color: #333;
+}
+
+.custom-addon .addon-meta {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.custom-addon .addon-badge {
+  background: #17a2b8;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.custom-addon .addon-version {
+  background: #6c757d;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+}
+
+.custom-addon .addon-content {
+  margin: 20px 0;
+  line-height: 1.6;
+  color: #495057;
+}
+
+.custom-addon .addon-footer {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.custom-addon .addon-footer p {
+  margin: 5px 0;
+}

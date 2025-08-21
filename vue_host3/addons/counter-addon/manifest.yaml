@@ -1,0 +1,10 @@
+name: "counter-addon"
+entry: "index.vue"
+route: "/counter"
+version: "1.0.0"
+description: "A simple counter addon for demonstration purposes."
+author: "Your Name"
+community: false
+price: 0
+rating: 4.5
+downloads: 2500

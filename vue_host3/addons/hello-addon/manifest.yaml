@@ -1,0 +1,7 @@
+name: "hello-addon"
+entry: "index.vue"
+route: "/hello"
+version: "1.0.0"
+description: "A simple counter addon for demonstration purposes."
+author: "Your Name"
+community: false
