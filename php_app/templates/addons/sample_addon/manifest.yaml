@@ -1,0 +1,4 @@
+id: sample_addon
+name: Sample Addon
+description: This is a sample addon
+view: view.html.twig

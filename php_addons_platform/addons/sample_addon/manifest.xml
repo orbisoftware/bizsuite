@@ -1,0 +1,6 @@
+<addon>
+  <id>sample_addon</id>
+  <name>Sample Addon</name>
+  <description>This is a test addon built in PHP platform.</description>
+  <view>view.php</view>
+</addon>

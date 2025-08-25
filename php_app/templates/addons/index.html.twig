@@ -1,0 +1,12 @@
+<h1>Installed Addons</h1>
+
+<ul>
+    {% for addon in addons %}
+        <li>
+            <strong>{{ addon.name }}</strong> - {{ addon.description }}
+            <a href="{{ path('addons_view', { addon: addon.folder }) }}">Open</a>
+        </li>
+    {% else %}
+        <li>No addons installed.</li>
+    {% endfor %}
+</ul>

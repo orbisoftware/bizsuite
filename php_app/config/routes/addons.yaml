@@ -1,0 +1,7 @@
+addons_index:
+    path: /addons
+    controller: App\Controller\AddonController::index
+
+addons_view:
+    path: /addons/{addon}
+    controller: App\Controller\AddonController::view

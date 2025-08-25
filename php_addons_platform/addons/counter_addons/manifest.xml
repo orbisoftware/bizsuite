@@ -1,0 +1,6 @@
+<addon>
+  <id>counter_addon</id>
+  <name>Counter Addon</name>
+  <description>This is a test addon built in PHP platform.</description>
+  <view>view.php</view>
+</addon>
