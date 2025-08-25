@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Addon Dashboard</title>
+  <script type="module" src="/public/components.bundle.js" defer></script>
+</head>
+<body>
+  <h1>Addon Dashboard</h1>
+  <my-button label="Click Me" type="primary"></my-button>
+  <h2>Installed Addons</h2>
+  <ul>
+    <% installed.forEach(name => { %>
+      <li>
+        <%= name %>
+        <form action="/uninstall/<%= name %>" method="POST" style="display:inline;">
+          <button type="submit">Uninstall</button>
+        </form>
+      </li>
+    <% }) %>
+  </ul>
+
+  <h2>Available Addons</h2>
+  <ul>
+    <% available.forEach(name => { %>
+      <li>
+        <%= name %>
+        <form action="/install/<%= name %>" method="POST" style="display:inline;">
+          <button type="submit">Install</button>
+        </form>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>

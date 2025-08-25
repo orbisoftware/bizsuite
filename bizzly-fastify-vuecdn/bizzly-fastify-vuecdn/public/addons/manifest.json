@@ -1,0 +1,6 @@
+{
+  "name": "Sample Counter Addon",
+  "version": "1.0.0",
+  "description": "A small reactive counter built with Vue (CDN) inside an iframe.",
+  "entry": "index.html"
+}

@@ -1,0 +1,13 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./core/backend" },
+    { "path": "./core/frontend" }
+  ],
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames":true,
+    "strict": true,
+    "composite": true,
+    "skipLibCheck": true
+  }
+}

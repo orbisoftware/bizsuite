@@ -1,0 +1,10 @@
+<manifest>
+  <id>example</id>
+  <name>Example Addon</name>
+  <version>0.1.0</version>
+  <main>main.mjs</main>
+  <view>views/index.ejs</view>
+  <publicDir>public</publicDir>
+</manifest>
+
+

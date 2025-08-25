@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Sample Addon</title>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <style>
+    body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; padding: 12px; }
+    button { padding: 6px 10px; margin: 4px; }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <h2>{{ title }}</h2>
+    <div style="font-size:24px;margin:12px 0">Count: {{ count }}</div>
+    <button @click="inc">Increment</button>
+    <button @click="dec">Decrement</button>
+    <button @click="reset">Reset</button>
+  </div>
+
+  <script>
+    const { createApp, ref } = Vue;
+    createApp({
+      setup() {
+        const title = 'Sample Addon Counter';
+        const count = ref(0);
+        function inc() { count.value++; notifyParent(); }
+        function dec() { count.value--; notifyParent(); }
+        function reset() { count.value = 0; notifyParent(); }
+        function notifyParent() {
+          // send a message to parent (dashboard) if needed
+          parent.postMessage({ addon: 'sample-addon', count: count.value }, '*');
+        }
+        return { title, count, inc, dec, reset };
+      }
+    }).mount('#app');
+  </script>
+</body>
+</html>
