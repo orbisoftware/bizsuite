@@ -1,0 +1,19 @@
+{
+  "name": "mf-vue3",
+  "version": "1.0.0",
+  "description": "Module Federation Vite + Vue3 is now possible",
+  "workspaces": [
+    "host",
+    "ui"
+  ],
+  "scripts": {
+    "install:deps": "npm install --workspaces",
+    "dev": "concurrently \"npm run dev --workspace=host\" \"npm run dev --workspace=ui\"",
+    "build": "npm run build --workspaces",
+    "preview": "concurrently \"npm run preview --workspace=host\" \"npm run preview --workspace=ui\""
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
